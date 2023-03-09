@@ -7,12 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E4119BD229B96F0A00582E93 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E4119BD129B96F0A00582E93 /* main.m */; };
 		E43441F229AF579F008FEC8A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E43441F129AF579F008FEC8A /* main.m */; };
 		E43441FF29AF5800008FEC8A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E43441FE29AF5800008FEC8A /* main.m */; };
 		E434420529AF599D008FEC8A /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E434420429AF599D008FEC8A /* CoreAudio.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		E4119BCD29B96F0A00582E93 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 		E43441EC29AF579F008FEC8A /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -34,6 +44,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		E4119BCF29B96F0A00582E93 /* CAToneFileGenerator */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CAToneFileGenerator; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4119BD129B96F0A00582E93 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E43441EE29AF579F008FEC8A /* AICoreAudio */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AICoreAudio; sourceTree = BUILT_PRODUCTS_DIR; };
 		E43441F129AF579F008FEC8A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E43441FC29AF5800008FEC8A /* CAMateData */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = CAMateData; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,6 +54,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		E4119BCC29B96F0A00582E93 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E43441EB29AF579F008FEC8A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -60,11 +79,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E4119BD029B96F0A00582E93 /* CAToneFileGenerator */ = {
+			isa = PBXGroup;
+			children = (
+				E4119BD129B96F0A00582E93 /* main.m */,
+			);
+			path = CAToneFileGenerator;
+			sourceTree = "<group>";
+		};
 		E43441E529AF579F008FEC8A = {
 			isa = PBXGroup;
 			children = (
 				E43441F029AF579F008FEC8A /* AICoreAudio */,
 				E43441FD29AF5800008FEC8A /* CAMateData */,
+				E4119BD029B96F0A00582E93 /* CAToneFileGenerator */,
 				E43441EF29AF579F008FEC8A /* Products */,
 				E434420329AF599D008FEC8A /* Frameworks */,
 			);
@@ -75,6 +103,7 @@
 			children = (
 				E43441EE29AF579F008FEC8A /* AICoreAudio */,
 				E43441FC29AF5800008FEC8A /* CAMateData */,
+				E4119BCF29B96F0A00582E93 /* CAToneFileGenerator */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -106,6 +135,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		E4119BCE29B96F0A00582E93 /* CAToneFileGenerator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4119BD529B96F0A00582E93 /* Build configuration list for PBXNativeTarget "CAToneFileGenerator" */;
+			buildPhases = (
+				E4119BCB29B96F0A00582E93 /* Sources */,
+				E4119BCC29B96F0A00582E93 /* Frameworks */,
+				E4119BCD29B96F0A00582E93 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CAToneFileGenerator;
+			productName = CAToneFileGenerator;
+			productReference = E4119BCF29B96F0A00582E93 /* CAToneFileGenerator */;
+			productType = "com.apple.product-type.tool";
+		};
 		E43441ED29AF579F008FEC8A /* AICoreAudio */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E43441F529AF579F008FEC8A /* Build configuration list for PBXNativeTarget "AICoreAudio" */;
@@ -149,6 +195,9 @@
 				BuildIndependentTargetsInParallel = 1;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
+					E4119BCE29B96F0A00582E93 = {
+						CreatedOnToolsVersion = 14.2;
+					};
 					E43441ED29AF579F008FEC8A = {
 						CreatedOnToolsVersion = 14.2;
 					};
@@ -172,11 +221,20 @@
 			targets = (
 				E43441ED29AF579F008FEC8A /* AICoreAudio */,
 				E43441FB29AF5800008FEC8A /* CAMateData */,
+				E4119BCE29B96F0A00582E93 /* CAToneFileGenerator */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		E4119BCB29B96F0A00582E93 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4119BD229B96F0A00582E93 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E43441EA29AF579F008FEC8A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -196,6 +254,22 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		E4119BD329B96F0A00582E93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E4119BD429B96F0A00582E93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		E43441F329AF579F008FEC8A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -340,6 +414,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		E4119BD529B96F0A00582E93 /* Build configuration list for PBXNativeTarget "CAToneFileGenerator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4119BD329B96F0A00582E93 /* Debug */,
+				E4119BD429B96F0A00582E93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		E43441E929AF579F008FEC8A /* Build configuration list for PBXProject "AICoreAudio" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
